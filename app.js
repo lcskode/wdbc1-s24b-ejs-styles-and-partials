@@ -19,7 +19,6 @@ app.get("/", function(req, res){
 
 // fallinlovewith ROUTE
 app.get("/fallinlovewith/:thing", function(req, res){
-// app.get("/fallinlovewith", function(req, res){
   var thing = req.params.thing;
   // {thingVar: thing} passes thing variable's value to thingVar as an object
   res.render("love", {thingVar: thing});
